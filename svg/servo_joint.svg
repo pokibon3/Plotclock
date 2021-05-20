@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="73.000694mm"
+   height="10.099998mm"
+   viewBox="0 0 73.000696 10.099999"
+   version="1.1"
+   id="svg922"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="spair_parts5.svg">
+  <defs
+     id="defs916">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path831" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path834" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path836" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path838" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE" />
+    <symbol
+       id="*PAPER_SPACE" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="98.56733"
+     inkscape:cy="32.632356"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     showguides="true"
+     inkscape:lockguides="true"
+     inkscape:window-width="2749"
+     inkscape:window-height="2022"
+     inkscape:window-x="1075"
+     inkscape:window-y="59"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1495"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="10"
+       dotted="false"
+       originx="149.16706"
+       originy="140.00044" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata919">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(149.16705,140.00043)">
+    <path
+       d="m -117.87075,-132.12619 a 1.4500006,1.45 0 1 0 0,-2.9 1.4500006,1.45 0 1 0 0,2.9 z"
+       style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path973" />
+    <path
+       d="m -145.87076,-132.12619 a 1.4500006,1.45 0 1 0 0,-2.9 1.4500006,1.45 0 1 0 0,2.9 z"
+       style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path975" />
+    <path
+       d="m -145.82076,-136.82505 h 28.00001 a 3.298861,3.298861 0 0 1 0,6.59772 h -28.00001 a 3.298861,3.298861 0 0 1 0,-6.59772 z"
+       style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path977" />
+    <g
+       id="g1158"
+       transform="rotate(90,-93.216358,-162.99623)">
+      <path
+         d="m -61.77056,-176.94623 a 1.45,1.4500006 0 1 0 -2.9,0 1.45,1.4500006 0 1 0 2.9,0 z"
+         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path979" />
+      <path
+         d="m -65.77056,-148.94515 c 1.93e-4,-0.26452 -0.05392,-0.49283 -0.147494,-0.68497 -0.59036,-1.2122 -2.751285,-0.98388 -2.752505,0.68497 -0.0015,1.93335 2.898586,1.93335 2.899999,0 z"
+         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path981"
+         sodipodi:nodetypes="ssss" />
+      <path
+         d="m -66.170559,-152.99623 v -24 a 3,3 0 0 1 2.999999,-3 v 0 a 3,3 0 0 1 2.999999,3 v 28 a 3,3 0 0 1 -2.999999,3 h -4 a 3,3 0 0 1 -2.999999,-3 v 0 a 3,3 0 0 1 2.999999,-3 v 0 a 1.0000001,1.0000001 0 0 0 1.000001,-1 z"
+         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path983" />
+    </g>
+  </g>
+</svg>

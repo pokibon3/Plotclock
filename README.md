@@ -1,2 +1,4 @@
-# Plotclock
-Plotclock for DAISO Marker
+# Plotclock for DAISO Marker
+- support DAISO WHITEBOARD MARKER
+- add Base Plate
+- modify arm parts
