@@ -29,17 +29,17 @@
 //#define CALIBRATION4     // enable Z calibration mode            // 2.00
 #define REALTIMECLOCK    // enable real time clock
 
-#define WISHY 10 // Offset of the Y coordinats of the plate-wisher
+#define WISHY 12 // Offset of the Y coordinats of the plate-wisher
 
 // When in calibration mode, adjust the following factors until the servos move exactly 90 degrees
-#define SERVOFAKTORLEFT 580   // 1.04 org:600 to 560 620
-#define SERVOFAKTORRIGHT 520  // 1.04 org:600 to 460 530
+#define SERVOFAKTORLEFT 570   // 1.04 org:600 to 560 620
+#define SERVOFAKTORRIGHT 510  // 1.04 org:600 to 460 530
 
 // Zero-position of left and right servo
 // When in calibration mode, adjust the NULL-values so that the servo arms are at all times parallel
 // either to the X or Y axis
-#define SERVOLEFTNULL 1700    // 1.04 org:1950 1720
-#define SERVORIGHTNULL 800    // 1.04 org: 815   820
+#define SERVOLEFTNULL 1680    // 1.04 org:1950 1720
+#define SERVORIGHTNULL 780    // 1.04 org: 815   740
 
 #define SERVOPINLIFT  2       
 #define SERVOPINLEFT  3
@@ -49,11 +49,11 @@
 // lift positions of lifting servo
 #define LIFT2 1310 + ZOFF // going towards sweeper  2.00 LIFT0 <-> LIFT2
 #define LIFT1 995 - 230 + ZOFF  // between numbers  2.00 org:995
-#define LIFT0 680 + ZOFF  // drawing                1.05 org : 600 
+#define LIFT0 660 + ZOFF  // drawing                1.05 org : 600 
 #define LIFTE 720 + ZOFF  // eraseing               1.05 org : 720 
 
-#define PEN_HOLDER_X  69    // 1.05 org:71.0
-#define PEN_HOLDER_Y  42    // 1.03 org:46
+#define PEN_HOLDER_X  66    // 1.05 org:71.0
+#define PEN_HOLDER_Y  44    // 1.03 org:46
 
 #define LIFT_DRAW  0    // 1.04   draw
 #define LIFT_SKIP  1    // 1.04   pen skip
@@ -70,9 +70,9 @@
 #define L4 45             // right servo pen arm 1.05 org:45
 
 // origin points of left and right servo 
-#define O1X  29           // offset of left servo  1.05 org:24 to 23
+#define O1X  25           // offset of left servo  1.05 org:24 to 29
 #define O1Y -25           //                       2.00 org -25 to -25
-#define O2X  55.5         // offset of right servo 1.05 org:49 to 49.5
+#define O2X  51.5         // offset of right servo 1.05 org:49 to 55.5
 #define O2Y -25           //                       2.00 org -25 to -25
 
 #ifdef REALTIMECLOCK      
@@ -184,8 +184,8 @@ void loop()
 
 #define SCALE1 0.9    // 1.04
 #define SCALE2 0.9    // 1.04
-#define YPOS    25    // 1.03
-#define XPOS     5    // 2.00
+#define YPOS    28    // 1.03
+#define XPOS     0    // 2.00
   int i = 0;
   if (last_min != minute()) {   // new time?
     if (!servo1.attached()) servo1.attach(SERVOPINLIFT);
@@ -197,7 +197,6 @@ void loop()
     {
       i++;
     }
-
     number(3, 3, 111, 1);
     if (first_flag) {       // 1.04
   //    drawRect();         // 1.04
@@ -234,7 +233,7 @@ void loop()
 // drawRect : draw rectangle for calibration
 //================================
 #define START_X  0
-#define START_Y 10
+#define START_Y 20
 #define END_X   60
 #define END_Y   45
 #define STEP     5
@@ -415,7 +414,6 @@ void number(float bx, float by, int num, float scale) {
   }
 }
 
-
 //================================
 // lift pen holder
 //================================
@@ -541,7 +539,7 @@ void drawTo(double pX, double pY) {
   dx = pX - lastX;
   dy = pY - lastY;
   //path lenght in mm, times 4 equals 4 steps per mm
-  c = floor(7 * sqrt(dx * dx + dy * dy));     // 2.00 org:7
+  c = floor(10 * sqrt(dx * dx + dy * dy));     // 2.00 org:7
 //  c = floor(4 * sqrt(dx * dx + dy * dy));   // 1.05
   if (c < 1) c = 1;
 
@@ -601,6 +599,7 @@ void set_XY(double Tx, double Ty)
   Serial.print("\tHy:");
   Serial.println(Hy);
 */
+
   // calculate triangle between pen joint, servoRight and arm joint
   dx = Hx - O2X;
   dy = Hy - O2Y;
@@ -610,7 +609,6 @@ void set_XY(double Tx, double Ty)
   a2 = return_angle(L1, L4, c);
 //  a2 = return_angle(L1, (L2 - L3), c);  // 1.05
   sv3 = floor(((a1 - a2) * SERVOFAKTORRIGHT) + SERVORIGHTNULL);
-
   servo3.writeMicroseconds((int)sv3);
 /*
   Serial.print("sv2:");
