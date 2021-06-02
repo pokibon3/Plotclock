@@ -7,3 +7,6 @@
   - modify arm parts
 - V2.00
   - support original chassis
+  V3.00
+  - support 4.5inch Boogie board
+  
